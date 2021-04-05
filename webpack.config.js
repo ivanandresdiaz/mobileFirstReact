@@ -40,6 +40,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpg|svg)$/,
+        type: 'asset/resource',
+      },
+      {
         test: /\.(woff|woff2)$/,
         use: {
           loader: 'url-loader',

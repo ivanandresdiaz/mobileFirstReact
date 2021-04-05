@@ -37,6 +37,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpg|svg)$/,
+        type: 'asset/resource',
+      },
+      {
         test: /\.(woff|woff2)$/,
         use: {
           loader: 'url-loader',
@@ -44,7 +48,7 @@ module.exports = {
             limit: 10000,
             mimetype: 'application/font-woff',
             name: '[name].[ext]',
-            outputPath: '.assets/fonts/',
+            outputPath: './assets/fonts/',
             publicPath: './assets/fonts/',
             esModule: false,
           },
