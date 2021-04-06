@@ -1,0 +1,73 @@
+@import "variables.scss";
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 334px;
+  min-width: 320px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
+}
+.header__title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 50px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__title-container h1 {
+  font-size: 2.4em;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: $color-just-white;
+}
+.header__title-container p {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: $color-soft-orange;
+}
+.container--button {
+  position: absolute;
+  bottom: -20px;
+  align-self: center;
+  display: flex;
+}
+.header__title-container .header__button {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 15px;
+  width: 299px;
+  height: 48px;
+  background-color: $color-off-white;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-black;
+  align-self: center;
+}
+.header__button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/down-arrow.svg");
+}
