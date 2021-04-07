@@ -43,3 +43,10 @@
   line-height: 1.6rem;
   color: #757575;
 }
+@media screen and (min-width: 930px) {
+  .main-tables-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 930px;
+  }
+}

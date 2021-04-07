@@ -11,3 +11,10 @@ html {
 body {
   background-color: $color-off-white;
 }
+@media screen and (min-width: 930px) {
+  .container-currencies-main {
+    display: flex;
+    width: 931px;
+    margin: 0 auto;
+  }
+}

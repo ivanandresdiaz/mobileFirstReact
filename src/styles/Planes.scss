@@ -1,0 +1,113 @@
+@import "variables.scss";
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: $color-black;
+}
+.plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+.plans-container--card {
+  scroll-snap-align: center;
+  width: 65%;
+  position: relative;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 5px;
+  padding: 0 15px;
+  background-color: $color-just-white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.container-recommended {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.recommended {
+  width: 120px;
+  height: 31px;
+  background-color: $color-bitcoin-orange;
+  border-radius: 8px;
+  color: $color-just-white;
+  padding: 6px;
+  font-size: 1.2rem;
+}
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: $color-black;
+}
+.plan-card--price {
+  font-size: 5.3rem;
+  font-weight: bold;
+  padding: 5px 0;
+  line-height: 5.3rem;
+  color: $color-black;
+}
+.plan-card--price span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: text-top;
+}
+.plan-card--saving {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: $color-bitcoin-orange solid 2px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: $color-black;
+}
+.plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/icons/orange-right-arrow.svg");
+  vertical-align: text-bottom;
+}
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 30px;
+}
+@media screen and (min-width: 930px) {
+  .plans-container--slider {
+    justify-content: center;
+  }
+}
